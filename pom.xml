@@ -2,81 +2,76 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<parent>
-		<groupId>com.alacriti.selenium.parent</groupId>
-		<artifactId>parent</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
-		<relativePath>../parent/pom.xml</relativePath>
-	</parent>
-	<groupId>TMSUI_QAAutomation</groupId>
+	
+	<groupId>com.practice.automation</groupId>
 	<artifactId>TMSUI_QAAutomation</artifactId>
+	<version>1.0.0</version> 
+	
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.source>11</maven.compiler.source> 
+		<maven.compiler.target>11</maven.compiler.target>
+	</properties>
+
 	<build>
-		<sourceDirectory>src</sourceDirectory>
-		<testSourceDirectory>${project.basedir}/src/test</testSourceDirectory>
 		<plugins>
 			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<configuration>
-					<source>${compileSource}</source>
-					<target>${compileTarget}</target>
-				</configuration>
+				<version>3.11.0</version>
 			</plugin>
-			<!-- Below plug-in is used to execute tests -->
+			
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>3.3.1</version>
+			</plugin>
+			
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
+				<version>3.2.2</version>
 				<configuration>
 					<testFailureIgnore>true</testFailureIgnore>
 					<suiteXmlFiles>
-						<!-- TestNG suite XML files -->
 						<suiteXmlFile>testng.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
 		</plugins>
+	</build>	
 
-	</build>
 	<dependencies>
-<!-- 	<dependency>
-          <groupId>org.slf4j</groupId>
-          <artifactId>slf4j-api</artifactId>
-        </dependency>
-        <dependency>
-           <groupId>org.slf4j</groupId>
-           <artifactId>slf4j-simple</artifactId>
-        </dependency>-->		
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>com.codoid.products</groupId>
-			<artifactId>fillo</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.freemarker</groupId>
-			<artifactId>freemarker</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>com.aventstack</groupId>
-			<artifactId>extentreports</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.jsoup</groupId>
-			<artifactId>jsoup</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.seleniumhq.selenium</groupId>
-			<artifactId>selenium-server</artifactId>
+			<version>4.15.0</version>
 		</dependency>
 		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
+			<version>7.8.0</version>
 		</dependency>
 			
 		<dependency>
-			<groupId>org.apache.maven.surefire</groupId>
-			<artifactId>surefire-api</artifactId>
+			<groupId>com.aventstack</groupId>
+			<artifactId>extentreports</artifactId>
+			<version>5.1.1</version>
+		</dependency>
+		<dependency>
+			<groupId>com.codoid.products</groupId>
+			<artifactId>fillo</artifactId>
+			<version>1.22</version>
+		</dependency>
+		<dependency>
+			<groupId>org.freemarker</groupId>
+			<artifactId>freemarker</artifactId>
+			<version>2.3.32</version>
+		</dependency>
+		<dependency>
+			<groupId>org.jsoup</groupId>
+			<artifactId>jsoup</artifactId>
+			<version>1.16.2</version>
 		</dependency>
 	</dependencies>
 </project>
