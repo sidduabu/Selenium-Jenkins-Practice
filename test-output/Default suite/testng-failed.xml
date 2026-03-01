@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="test.TravelRule_Transfers_CustomerSupport">
+        <methods>
+          <include name="startSuite"/>
+          <include name="tc029TravelRule_POBox_And_WhiteListedCountry_ValidToInValid_For_RecipientAddress_FW_Transfers"/>
+          <include name="tc010TravelRule_POBox_Blacklisted_And_InvalidToValid_For_SenderAddress_FW_Transfers"/>
+          <include name="tc011TravelRule_POBox_And_ValidToInValid_For_SenderAddress_FW_Transfers"/>
+          <include name="tc019TravelRule_POBox_And_WhitelistedCountry_Validation_For_RecipientAddress_FW_Transfers"/>
+          <include name="tc021TravelRule_POBox_And_InvalidToValid_For_RecipientAddress_FW_Transfers"/>
+          <include name="tc024TravelRule_POBox_Whitelisted_And_InvalidToValid_For_RecipientAddress_FW_Transfers"/>
+          <include name="tc002TravelRule_WhitelistedCountry_Validation_For_SenderAddress_FW_Transfers"/>
+          <include name="tc003TravelRule_BlacklistedCountry_Validation_For_SenderAddress_FW_Transfers"/>
+          <include name="tc009TravelRule_POBox_Whitelisted_And_InvalidToValid_For_SenderAddress_FW_Transfers"/>
+          <include name="tc015TravelRule_POBox_And_BlackListedCountry_ValidToInValid_For_SenderAddress_FW_Transfers"/>
+          <include name="tc006TravelRule_POBox_And_InvalidToValid_For_SenderAddress_FW_Transfers"/>
+          <include name="endSuite"/>
+          <include name="tc023TravelRule_Blacklisted_And_InvalidToValid_For_RecipientAddress_FW_Transfers"/>
+          <include name="tc030TravelRule_POBox_And_BlackListedCountry_ValidToInValid_For_RecipientAddress_FW_Transfers"/>
+          <include name="tc025TravelRule_POBox_Blacklisted_And_InvalidToValid_For_RecipientAddress_FW_Transfers"/>
+          <include name="tc017TravelRule_WhitelistedCountry_Validation_For_RecipientAddress_FW_Transfers"/>
+          <include name="tc022TravelRule_Whitelisted_And_InvalidToValid_For_RecipientAddress_FW_Transfers"/>
+          <include name="tc001TravelRule_POBox_Validation_For_SenderAddress_FW_Transfers"/>
+          <include name="startTest"/>
+          <include name="endTest"/>
+          <include name="tc014TravelRule_POBox_And_WhiteListedCountry_ValidToInValid_For_SenderAddress_FW_Transfers"/>
+          <include name="tc013TravelRule_BlackListed_And_ValidToInValid_For_SenderAddress_FW_Transfers"/>
+          <include name="tc018TravelRule_BlacklistedCountry_Validation_For_RecipientAddress_FW_Transfers"/>
+          <include name="tc026TravelRule_POBox_And_ValidToInValid_For_RecipientAddress_FW_Transfers"/>
+          <include name="tc007TravelRule_Whitelisted_And_InvalidToValid_For_SenderAddress_FW_Transfers"/>
+          <include name="tc028TravelRule_BlackListed_And_ValidToInValid_For_RecipientAddress_FW_Transfers"/>
+          <include name="tc016TravelRule_POBox_Validation_For_RecipientAddress_FW_Transfers"/>
+          <include name="tc008TravelRule_Blacklisted_And_InvalidToValid_For_SenderAddress_FW_Transfers"/>
+          <include name="tc020TravelRule_POBox_And_BlacklistedCountry_Validation_For_RecipientAddress_FW_Transfers"/>
+          <include name="tc004TravelRule_POBox_And_WhitelistedCountry_Validation_For_SenderAddress_FW_Transfers"/>
+          <include name="tc012TravelRule_WhiteListed_And_ValidToInValid_For_SenderAddress_FW_Transfers"/>
+          <include name="tc005TravelRule_POBox_And_BlacklistedCountry_Validation_For_SenderAddress_FW_Transfers"/>
+          <include name="tc027TravelRule_WhiteListed_And_ValidToInValid_For_RecipientAddress_FW_Transfers"/>
+        </methods>
+      </class> <!-- test.TravelRule_Transfers_CustomerSupport -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

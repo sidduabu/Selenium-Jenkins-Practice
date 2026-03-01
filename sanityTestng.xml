@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<!-- Sanity Cases  -->
+
+	<test name="DepositOperations_Approvals">
+		<classes>
+			<class name="test.DepositOperations_Approvals">
+				<methods>
+					<include name="TC001NewRecipientRetailTransfer_RTP" />
+					<include name="TC002NewRecipientRetailTransfer_FedNow" />
+					<include name="TC003FutureDatewithNewRecipientRetailTransfer_FedWire" />
+					<include name="TC017ExistRecipientRetailTransferCurrentDate_FedWire" />
+					<include name="TC025NewRecipientRetailTransferDualApproval_RTP" />
+					<include name="TC040DeclineCurrentDateNewRecipientPartiallyApprovedBusinessTransfer_FedWire" />
+					<include name="TC056EditSender_CurrentToFutureDateRetailTransfer_ExistRecips_InPendingApproval_FedWire" />
+
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="FIPayments_Approvals">
+		<classes>
+			<class name="test.FIPayments_Approvals">
+				<methods>
+					<include name="TC001RTPwithNewRecipient" />
+					<include name="TC002FedNowWithNewRecipient" />
+					<include name="TC004FedWireCurrentDatePmtWithNewRecipient" />
+					<include name="TC005RTPwithExistRecipient" />
+					<include name="TC023CurrentDateExistRecipientPartiallyApprovedFI_FedWire" />
+					<include name="TC028DeclineCurrentDateNewRecipientPartiallyApproved_FedWire" />
+					<include name="TC049EditMortgageToDDACurrentToFutureDate_ExistRecipsInPendingApproval_FedWire" />
+
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="XBWirePayments">
+		<classes>
+			<class name="test.XBWirePayments">
+				<methods>
+					<include name="TC001RetailTransferXBWire_Argentina" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="DepositOperations">
+		<classes>
+			<class name="test.DepositOperations">
+				<methods>
+					<include name="TC001DirectSubmitWithNewRecipientRetailTransfer_RTP" />
+				<include name="TC012DirectSubmitCurrentDateExistRecipientBusinessTransfer_FedWire" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="FIPayments">
+		<classes>
+			<class name="test.FIPayments">
+				<methods>
+					<include name="TC001DirectSubmitRTPwithExistRecipient" />
+				<include name="TC017DirectSubmitFedWireDDAAccountWithNewRecipient" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="XBWireFieldValidation">
+		<classes>
+			<class name="test.XBWireFieldValidation">
+				<methods>
+					<include name="TC007AccountNumLessThanMinReqMsg" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="AddRecipients_FI">
+		<classes>
+			<class name="test.AddRecipients_FI">
+				<methods>
+					<include name="TC001AddNewRecipientRTPIndividual" />
+					<include name="TC006AddNewRecipientFedWireBusiness" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="FedFileNegativeCases">
+		<classes>
+			<class name="test.FedFileNegativeCases">
+				<methods>
+					<include name="TC001UploadFedFilewithMaxLengthsCheck_FI" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+</suite> <!--
+Suite -->

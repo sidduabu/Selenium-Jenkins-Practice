@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	
+    <test name="Dupaco_DepOp_Transfers_And_AddRecipient">
+        <classes>
+            <class name="test.Dupaco_DepOp_Transfers_And_AddRecipient" />
+        </classes>
+    </test>
+    <test name="Dupaco_FI_Pmts_And_AddRecipient">
+        <classes>
+            <class name="test.Dupaco_FI_Pmts_And_AddRecipient" />
+        </classes>
+    </test>
+    <test name="EditAddingRecipient_And_CheckDuplicateRecipMsg_DepOp">
+        <classes>
+            <class name="test.EditAddingRecipient_And_CheckDuplicateRecipMsg_DepOp" />
+        </classes>
+    </test>
+  
+
+</suite> <!--
+Suite -->

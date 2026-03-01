@@ -1,0 +1,148 @@
+<FedwireFundsIncoming xmlns="urn:fedwirefunds:incoming:v001">
+  <FedwireFundsIncomingMessage>
+    <FedwireFundsCustomerCreditTransfer>
+      <AppHdr xmlns="urn:iso:std:iso:20022:tech:xsd:head.001.001.03">
+        <Fr>
+          <FIId>
+            <FinInstnId>
+                <ClrSysMmbId>
+                  <MmbId>124384657</MmbId>
+                </ClrSysMmbId>
+            </FinInstnId>
+          </FIId>
+        </Fr>
+        <To>
+          <FIId>
+            <FinInstnId>
+                <ClrSysMmbId>
+                  <MmbId>021151080</MmbId>
+                </ClrSysMmbId>
+            </FinInstnId>
+          </FIId>
+        </To>
+        <BizMsgIdr>20250212000TABUT032612</BizMsgIdr>
+        <MsgDefIdr>pacs.008.001.08</MsgDefIdr>
+        <BizSvc>TEST</BizSvc>
+        <MktPrctc>
+          <Regy>www2.swift.com/mystandards/#/group/Federal_Reserve_Financial_Services/Fedwire_Funds_Service</Regy>
+          <Id>frb.fedwire.01</Id>
+        </MktPrctc>
+        <CreDt>2025-02-12T15:29:39.000Z</CreDt>
+      </AppHdr>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08">
+<FIToFICstmrCdtTrf>
+  <GrpHdr>
+    <MsgId>20250212000TABUT032612</MsgId>
+    <CreDtTm>2025-02-12T15:36:20.000Z</CreDtTm>
+    <NbOfTxs>1</NbOfTxs>
+    <SttlmInf>
+      <SttlmMtd>CLRG</SttlmMtd>
+      <ClrSys>
+        <Cd>FDW</Cd>
+      </ClrSys>
+    </SttlmInf>
+  </GrpHdr>
+  <CdtTrfTxInf>
+    <PmtId>
+      <InstrId>6032612</InstrId>
+      <EndToEndId>NOTPROVIDED</EndToEndId>
+      <UETR>42f5930a-8411-4b4f-b5e8-2e12a9eccaef</UETR>
+    </PmtId>
+    <PmtTpInf>
+      <LclInstrm>
+        <Prtry>CTRC</Prtry>
+      </LclInstrm>
+    </PmtTpInf>
+    <IntrBkSttlmAmt Ccy="USD">1653.21</IntrBkSttlmAmt>
+    <IntrBkSttlmDt>2025-02-12</IntrBkSttlmDt>
+    <InstdAmt Ccy="USD">1653.21</InstdAmt>
+    <ChrgBr>SHAR</ChrgBr>
+    <InstgAgt>
+      <FinInstnId>
+        <ClrSysMmbId>
+          <ClrSysId>
+            <Cd>USABA</Cd>
+          </ClrSysId>
+          <MmbId>124384657</MmbId>
+        </ClrSysMmbId>
+      </FinInstnId>
+    </InstgAgt>
+    <InstdAgt>
+      <FinInstnId>
+        <ClrSysMmbId>
+          <ClrSysId>
+            <Cd>USABA</Cd>
+          </ClrSysId>
+          <MmbId>021000021</MmbId>
+        </ClrSysMmbId>
+      </FinInstnId>
+    </InstdAgt>
+    
+    <Dbtr>
+      <Nm>Analyzed Test Account</Nm>
+      <PstlAdr>
+        <AdrLine>4185 HARRISON BLVD</AdrLine>
+<AdrLine>OGDEN,UT</AdrLine>
+<AdrLine>US,84401</AdrLine>
+
+      </PstlAdr>
+    </Dbtr>
+    <DbtrAcct>
+      <Id>
+        <Othr>
+          <Id>501114458</Id>
+        </Othr>
+      </Id>
+    </DbtrAcct>
+    <DbtrAgt>
+      <FinInstnId>
+        <ClrSysMmbId>
+          <ClrSysId>
+            <Cd>USABA</Cd>
+          </ClrSysId>
+          <MmbId>124384657</MmbId>
+        </ClrSysMmbId>
+        <Nm>TAB Bank</Nm>
+             <PstlAdr>
+       <AdrLine>4185 Harrison Blvd,Suite 200</AdrLine>
+<AdrLine>Ogden,UT</AdrLine>
+<AdrLine>US,84403</AdrLine>
+
+     </PstlAdr>
+
+      </FinInstnId>
+    </DbtrAgt>
+    <CdtrAgt>
+      <FinInstnId>
+        
+        
+        <Nm>JPMorgan Chase Bank</Nm>
+        <PstlAdr>
+          <AdrLine>451 Florida St</AdrLine>
+<AdrLine>Baton Rouge,LA</AdrLine>
+<AdrLine>US,70801</AdrLine>
+
+        </PstlAdr>
+      </FinInstnId>
+    </CdtrAgt>
+    <Cdtr>
+      <Nm>Just In Time</Nm>
+      <PstlAdr>
+        <AdrLine>123 Test Dr</AdrLine>
+<AdrLine>Ogden,UT</AdrLine>
+<AdrLine>US,84403</AdrLine>
+
+      </PstlAdr>
+    </Cdtr>
+    <CdtrAcct>
+      <Id>
+        <Othr><Id>987654321</Id></Othr>
+      </Id>
+    </CdtrAcct>
+    
+  </CdtTrfTxInf>
+</FIToFICstmrCdtTrf>
+</Document>
+    </FedwireFundsCustomerCreditTransfer>
+  </FedwireFundsIncomingMessage>
+</FedwireFundsIncoming>

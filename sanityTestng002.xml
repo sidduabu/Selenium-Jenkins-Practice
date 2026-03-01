@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<!-- Sanity Cases002  -->
+
+	<!--<test name="AddRecipient_Risk_Delete">
+		<classes>
+			<class name="test.AddRecipient_Risk_Delete">
+				<methods>
+					<include
+						name="TC001AddNewRecipientIndividual_FI_RTP_Risk_Release_Approve_AndThen_DeleteActions" />
+					<include
+						name="TC004AddNewRecipientIndividual_FI_FedNow_Risk_Release_Approve_AndThen_DeleteActions" />
+					<include
+						name="TC007AddNewRecipientIndividual_FI_FedWire_Risk_Release_Approve_AndThen_DeleteActions" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Dupaco_FI_Pmts_And_AddRecipient">
+		<classes>
+			<class name="test.Dupaco_FI_Pmts_And_AddRecipient">
+				<methods>
+					<include
+						name="TC001DupacoPmt_FundViaFedMasterAccToNewFIRecip_CurrentDate_DirectSubmit" />
+					<include
+						name="TC004DupacoPmt_DDAaccToNewFIRecip_CurrentDate_DirectSubmit" />
+					<include
+						name="TC008DupacoPmt_DDAaccToNewIndividualRecip_CurrentDate_SubmitForApproval" />
+					<include
+						name="TC012DupacoPmt_LedgerAccToNewFIRecip_CurrentDate_DeclinePmt" />
+					<include
+						name="TC016DupacoPmt_DDAaccToNewIndividualRecip_FutureDate_DirectSubmit" />
+					<include
+						name="TC022DupacoPmt_FundViaFedMasterAccToExistingFIRecip_CurrentDate_DirectSubmit" />
+					<include
+						name="TC036DupacoPmt_LedgerAccToExistingIndividualRecip_CurrentDate_DeclinePmt" />
+					<include
+						name="TC042DupacoPmt_LedgerAccToExistingIndividualRecip_FutureDate_DeclinePmt" />
+					<include
+						name="tc049Dupaco_AddNewRecipient_Individual_And_Deleting" />
+					<include
+						name="tc050Dupaco_AddNewRecipient_Business_And_Deleting" />
+					<include name="tc051Dupaco_AddNewRecipient_FI_And_Deleting" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+-->	<test name="Dupaco_DepOp_Transfers_And_AddRecipient">
+		<classes>
+			<class name="test.Dupaco_DepOp_Transfers_And_AddRecipient">
+				<methods>
+					<include
+						name="TC001DupacoTransfers_To_NewIndividualRecipient_CurrentDate_DirectSubmit" />
+					<include
+						name="TC007DupacoTransfers_To_NewIndividualRecipient_FutureDate_DirectSubmit" />
+					<include
+						name="TC013DupacoTransfers_To_ExistingIndividualRecipient_CurrentDate_DirectSubmit" />
+					<include
+						name="TC019DupacoTransfers_To_ExistingIndividualRecipient_FutureDate_DirectSubmit" />
+					<include
+						name="TC025Dupaco_AddingNewIndividualRecipient_MGD_DepOp" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="FedFile_FIAM_Format_Payments">
+		<classes>
+			<class name="test.FedFile_FIAM_Format_Payments">
+				<methods>
+					<include
+						name="tc001FedFile_FIAM_BTR_Pmt_FunViaFedMasterAcc_To_FI_Recip_With_NoAdditnlRemittInfo_DirectSubmit_FI_Pmts" />
+					<include
+						name="tc009FedFile_FIAM_CTR_Pmt_GL_AccToIndividPmt_WithNoAdditnlRemittInfo_DirectSubmit_FI_Pmts" />
+					<include
+						name="tc020FedFile_FIAM_CTP_Pmt_DDAaccToIndividPmt_WithStructRemitt_SubmitForApproval_FI_Pmts" />
+					<include
+						name="tc028FedFile_FIAM_tch_fundingaccount_UploadNoAdditnlRemittInfo_SubmitForApproval_FI_Pmts" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="FedFile_FIAM_Format_Transfers">
+		<classes>
+			<class name="test.FedFile_FIAM_Format_Transfers">
+				<methods>
+					<include
+						name="tc001FedFile_FIAM_SenderToIndivdRecipWithStructuralRemitt_DirectSubmit_Depo_Transfer" />
+					<include
+						name="tc002FedFile_FIAM_SenderToIndivdRecipWithStructuralRemitt_SubmitForApproval_Depo_Transfer" />
+					<include
+						name="tc004FedFile_FIAM_SenderToIndivdRecipWithExternalRemitt_SubmitForApproval_Depo_Transfer" />
+					<include
+						name="tc006FedFile_FIAM_SenderToIndivdRecipWithNoAdditnlRemittInfo_SubmitForApproval_Depo_Transfer" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="BTR_Payments_FI_FedWire">
+		<classes>
+			<class name="test.BTR_Payments_FI_FedWire">
+				<methods>
+					<include
+						name="TC001BTR_Pmt_FundViaFedMasterAccToNewFIRecip_CurrentDate_DirectSubmit" />
+					<include
+						name="TC005BTR_Pmt_GLaccountToNewFIRecip_CurrentDate_SubmitForApproval" />
+					<include
+						name="TC009BTR_Pmts_DDAaccountToNewFIRecip_CurrentDate_DeclinePmt" />
+					<include
+						name="TC012BTR_Pmt_LedgerAccountToNewFIRecip_CurrentDate_DeclinePmt" />
+					<include
+						name="TC014BTR_Pmt_FundViaFedMasterAccToExistingFIRecip_CurrentDate_SubmitForApproval" />
+					<include
+						name="TC025BTR_Pmt_FundViaFedMasterAccToNewFIRecip_FutureDateCheck_DirectSubmit" />
+					<include
+						name="TC026BTR_Pmt_GLaccountToNewFIRecip_FutureDateCheck_DirectSubmit" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+</suite> <!--
+Suite -->
