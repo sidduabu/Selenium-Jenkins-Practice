@@ -1,7 +1,7 @@
 pipeline {
     agent any 
     parameters {
-        choice(name: 'TEST_SUITE', choices: ['sanityTesting.xml', 'testng.xml'], description: 'Which test suite do you want to run?')
+        choice(name: 'TEST_SUITE', choices: ['sanityTestng.xml', 'testng.xml'], description: 'Which test suite do you want to run?')
     }
 
     stages {
